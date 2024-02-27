@@ -1,0 +1,27 @@
+.searchTicket{
+    position: fixed;
+    top:120px;
+    right:13%;
+    display: block;
+    input{
+        padding:7px 10px;
+        border-radius: 5px;
+        width: 200px;
+        border:thin solid black;
+    }
+    input::placeholder{
+        padding-left:10px;
+    }
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin:auto;
+    max-width: 800px;
+    th{
+        border-bottom:thin solid black;
+        padding:1rem;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+}

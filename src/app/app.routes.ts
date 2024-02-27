@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 
 import { ClientareaComponent } from './Users/clientarea/clientarea.component';
 import { DashboardComponent } from './Users/dashboard/dashboard.component';
+import { TicketComponent } from './Users/ticket/ticket.component';
 
 export const routes: Routes = [
     { path: 'login', component:LoginComponent},
@@ -16,6 +17,10 @@ export const routes: Routes = [
             {
                 path:'dashboard',
                 component:DashboardComponent,
+            },
+            {
+                path:'tickets',
+                component:TicketComponent
             }
         ]
     }

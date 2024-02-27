@@ -1,0 +1,100 @@
+.contain {
+  background-color: #0D081C;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.text {
+  width: 360px;
+  justify-content: center;
+  color: white;
+  line-height: 40px;
+  color: gray;
+  text-align: center;
+  font-style: italic;
+}
+
+.containSupport {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.helpDesk, .call {
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+  text-align: center;
+  padding: 2rem 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem 2rem 0rem 2rem;
+  height: 300px;
+}
+
+.call div, .helpDesk div {
+  padding: 1.5rem;
+}
+
+.call div:nth-child(2), .helpDesk div:nth-child(2) {
+  font-size: 20px;
+}
+
+.image {
+  padding: none !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
+
+button {
+  padding: 7px 12px;
+  border-radius: 5px;
+  background-color: #362B57;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #64539F;
+}
+
+h2 {
+  color: white;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 850px) {
+  .containSupport {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .containSupport {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+  .contain {
+    height: 700px;
+  }
+  .text {
+    margin-top: -30px;
+    font-size: 18px;
+  }
+  h2 {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=security.component.css.map */

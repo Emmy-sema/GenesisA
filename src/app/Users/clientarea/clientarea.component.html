@@ -15,14 +15,17 @@
         <div id="user">Emmy</div>
     </div>
     <div class="contain">
-        <div class="home"> <mat-icon>home</mat-icon> <div>Dashboard</div></div>
+        <div class="home" routerLink="dashboard"> <mat-icon>home</mat-icon> <div>Dashboard</div></div>
         <div class="domain"> <mat-icon>language</mat-icon> <div>domains</div></div>
         <div class="billing"> <mat-icon>description</mat-icon> <div>billing</div> </div>
 
-        <div class="help"> <mat-icon>mail</mat-icon><div> support</div></div>
+        <div class="help" routerLink="tickets"> <mat-icon>mail</mat-icon><div> support</div></div>
         <div class="setting"> <mat-icon>settings</mat-icon> <div>settings</div></div>
     </div>
     <div class="genesis">Genesis</div>
 </div>
-    <router-outlet name="client"></router-outlet>
-    <router-outlet></router-outlet>
+    <div class="subfolders">
+        <h1 class="title">My dashboard</h1>
+        <router-outlet></router-outlet>
+    </div>
+    

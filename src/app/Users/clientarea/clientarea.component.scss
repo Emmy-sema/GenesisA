@@ -1,6 +1,8 @@
 .top{
     border-bottom:1px solid black;
     text-align: right;
+    display: flex;
+    justify-content: right;
 }
 .icons{
     padding: 7px;
@@ -8,7 +10,6 @@
     align-items: center;
     justify-content: space-around;
     width: 300px;
-    margin-left:70%;
     cursor: pointer;
 }
 .pin{
@@ -21,11 +22,12 @@
 /* nav */
 .navBar{
     background-color: #0D081C;
-    width: 200px;
+    width: 150px;
     color: white;
     position:fixed;
     bottom:0;
     top:0;
+    z-index: 1;
 }
 .user{
     background-color: #241F31;
@@ -46,10 +48,10 @@
 }
 
 .contain mat-icon{
-    font-size: 30px;
+    font-size: 25px;
     width: fit-content;
     height: fit-content;
-    padding:1rem;
+    padding:1.2rem;
 }
 .contain div{
     text-align: center;
@@ -64,5 +66,21 @@
     color:white;
     font-size: x-large;
     bottom: 30px;
-    left:50px;
+    left:30px;
+}
+.subfolders{
+    width:80%;
+    overflow: hidden;
+    position:absolute;
+    right: 0;
+    z-index: 0;
+}
+
+// fixing the titles
+
+.title{
+    width: 90%;
+    margin:5rem auto;
+    font-size: 40px;
+    font-weight:bolder
 }

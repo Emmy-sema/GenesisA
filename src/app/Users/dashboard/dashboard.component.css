@@ -1,0 +1,123 @@
+.page {
+  overflow: hidden;
+  position: relative;
+  max-width: 400px;
+  background-color: #0D081C;
+  margin: 10rem auto;
+  color: white;
+  border-radius: 5px;
+}
+.page .contain .dashboard {
+  padding: 2rem;
+}
+.page .contain .dashboard .title {
+  font-size: 18px;
+}
+.page .contain .dashboard .contacts .email {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  margin-left: 1rem;
+}
+.page .contain .dashboard .contacts .phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.page .contain .dashboard .contacts .logout {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.page .contain .dashboard .counts {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.page .contain .dashboard .counts .domain, .page .contain .dashboard .counts .tickets, .page .contain .dashboard .counts .invoice {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+}
+.page .contain .dashboard .counts .number {
+  font-size: 100px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.page .contain .dashboard .counts .text {
+  margin-top: 3rem;
+}
+
+.green, .red, .yellow {
+  width: 0.5px;
+  opacity: 0.6;
+  height: 800px;
+  transform-origin: 0%, 0%;
+  transform: rotate(33deg);
+  top: -12%;
+}
+
+.green {
+  background-color: green;
+  position: absolute;
+  left: 45%;
+  z-index: 1;
+}
+
+.red {
+  background-color: red;
+  position: absolute;
+  left: 52%;
+}
+
+.yellow {
+  background-color: yellow;
+  position: absolute;
+  left: 38%;
+}
+
+@media only screen and (min-width: 900px) {
+  .page {
+    max-width: none;
+    width: 700px;
+    padding: 5rem;
+  }
+  .page .dashboard {
+    display: flex;
+    justify-content: space-around;
+  }
+  .green, .red, .yellow {
+    width: 1px;
+    opacity: 0.4;
+    height: 1200px;
+    transform-origin: 0%, 0%;
+    transform: rotate(60deg);
+    top: -65%;
+  }
+  .yellow {
+    background-color: yellow;
+    position: absolute;
+    left: 35%;
+  }
+  .green {
+    background-color: green;
+    position: absolute;
+    left: 45%;
+    z-index: 1;
+  }
+  .red {
+    background-color: red;
+    position: absolute;
+    left: 55%;
+  }
+}/*# sourceMappingURL=dashboard.component.css.map */
