@@ -1,0 +1,137 @@
+.contain{
+    height: 120vh;
+    background-color: black;
+    width: 100%;
+    
+}
+.show{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin:auto auto;
+    padding-top: 25px;
+}
+img{
+    padding: .5rem;
+}
+.show img{
+    width: 25%;
+
+}
+.show img:nth-child(1){
+    max-width: 200px;
+    max-height: 100px;
+    min-width: 50px;
+    min-height: 50px;
+}
+.show img:nth-child(2){
+    max-width: 20px;
+    max-height: 80px;
+    min-width: 75px;
+    min-height: 50px;
+}
+.show img:nth-child(3){
+    max-width: 180px;
+    max-height: 90px;
+    min-width: 50px;
+    min-height: 50px;
+}
+.show img:nth-child(4){
+    max-width: 90px;
+    max-height: 90px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+/* silhoutte */
+.silhoutte{
+    margin: 3rem auto;
+    width: fit-content;
+    position:absolute;
+    right:50%;
+    top:107%
+}
+
+/* ads */
+.ads{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:100px 50px;
+    width: 70%;
+    margin:auto;
+}
+.logo{
+    padding-right:10px;
+}
+.special{
+    background-color: #1F1D2C;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:1rem;
+    
+}
+@media only screen and (max-width:1648px){
+    .silhoutte{
+        right:48%;
+    }
+}
+@media only screen and (max-width:1318px){
+    .silhoutte{
+        right:47%;
+    }
+}
+@media only screen and (max-width:1303px){
+    .silhoutte{
+        right:23%;
+    }
+    .ads{
+        display: block;
+        max-width: 400px;
+        padding:2rem;
+        margin-left:27%
+
+    }
+    .special{
+        justify-content: left;
+        margin: 2rem;
+        padding:1rem;
+    }
+}
+@media only screen and (max-width:1060px){
+    .ads{
+        margin-left:25%
+
+    }
+}
+@media only screen and (max-width:1013px){
+    .ads{
+        margin-left:20%
+
+    }
+}
+@media only screen and (max-width:931px){
+    .ads{
+        margin-left:16%
+    }
+}
+@media only screen and (max-width:872px){
+    .silhoutte{
+        right:100px;
+    }
+}
+@media only screen and (max-width:750px){
+    .silhoutte{
+        right:50px;
+    }
+}
+@media only screen and (max-width:695px){
+    .silhoutte{
+        display: none;
+    }
+    .ads{
+        margin:auto auto !important;
+    }
+}

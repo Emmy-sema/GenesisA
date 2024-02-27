@@ -1,0 +1,66 @@
+.contain{
+    padding-top:50px;
+    background-color: #0D081C;
+    color: white;
+}
+
+.contain div{
+    width: 100%;
+    margin:auto;
+    padding:1rem;
+}
+
+.contain .image{
+    max-width:350px;
+    max-height: 350px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.contain .text{
+    color: gray;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 50px; /* 285% */
+    width: 529px;
+    text-align: center;
+    font-size: 23px;
+    height: fit-content;
+}
+h1{
+    color:white;
+    padding:1rem;
+}
+@media only screen and (min-width:1060px){
+    .contain div{
+        margin-top:5px;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+    
+    .contain .first{
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contain .second{
+        width: 80%;
+        display: flex;
+    }
+    .contain .third{
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .image{
+        max-width: 430px !important;
+    }
+    img{
+        width: 100%;
+    }
+}

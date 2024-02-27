@@ -1,0 +1,68 @@
+.top{
+    border-bottom:1px solid black;
+    text-align: right;
+}
+.icons{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    margin-left:70%;
+    cursor: pointer;
+}
+.pin{
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* nav */
+.navBar{
+    background-color: #0D081C;
+    width: 200px;
+    color: white;
+    position:fixed;
+    bottom:0;
+    top:0;
+}
+.user{
+    background-color: #241F31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:7px;
+    border-bottom:1px solid white;
+}
+
+.user mat-icon{
+    font-size: 20px;
+    width: fit-content;
+}
+.home,.domain,.billing,.help,.setting{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.contain mat-icon{
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    padding:1rem;
+}
+.contain div{
+    text-align: center;
+    display: block;
+    font-size: large;
+    text-transform: capitalize;
+}
+
+
+.genesis{
+    position: fixed;
+    color:white;
+    font-size: x-large;
+    bottom: 30px;
+    left:50px;
+}

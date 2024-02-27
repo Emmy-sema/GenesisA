@@ -1,0 +1,91 @@
+.contain{
+    background-color: #171420;
+    color: white;
+    padding:1rem;
+}
+p{
+    color: #2A4AF4;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding:1rem;
+}
+.small{
+    padding: .7rem .5rem;
+    font-size: 13px;
+    width: 210px;
+    text-align: center;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    font-size:23px;
+}
+.containPlans{
+    
+    display: block;
+    width: fit-content;
+    margin: auto auto;
+}
+.plans{
+    background-color: white;
+    color:black;
+    max-width: 300px;
+    height: fit-content;
+    padding:2.5rem;
+    border-radius: .5rem;
+    margin-top:7rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.plans:hover{
+    cursor: pointer;
+}
+.promise:nth-child(1){
+    margin-top:1rem;
+}
+
+.plans .promise{
+    padding:1rem;
+    font-size: 17px;
+    color:rgb(100, 96, 96);
+}
+.plans .promise .icon img{
+    width:18px;
+    width: 18px;
+    margin-right:15px;
+}
+.promise{
+    display: flex;
+    justify-content:left;
+}
+button{
+    background: #171420;
+    color: white;
+    padding:.5rem;
+
+    width: 120px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:730px){
+    .containPlans{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    .plans{
+        margin:1rem;
+    }
+}
+@media only screen and (min-width:1111px){
+    .containPlans{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+    .plans{
+        margin:1rem;
+    }
+}

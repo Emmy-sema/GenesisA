@@ -1,0 +1,104 @@
+.contain{
+    background-color: #0D081C;
+    height: fit-content;
+    padding:1rem;
+    color:white;
+}
+.fake{
+    border-top:2px solid white;
+    padding:1rem;
+    width: fit-content;
+    margin: auto auto;
+}
+h3{
+    font-size: 27px;
+    text-transform: uppercase;
+}
+/* first */
+.socialMedia p{
+    color:grey;
+    font-size: 16px;
+    max-width:350px;
+    margin-top:1rem;
+    line-height: 1.8;
+}
+.icons img{
+    width:40px;
+    height: 40px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 2rem;
+}
+
+/* second */
+
+.contact{
+    margin-top:3rem;
+}
+.contact .location,.phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin-top:1rem;
+}
+.location{
+    margin-top:2rem;
+}
+
+.contact div div{
+    margin-left:.5rem;
+    
+}
+.contact img{
+    width: 20px;
+    height: 20px;
+}
+
+/* links */
+.quicklinks{
+    margin-top:3rem;
+}
+
+ul{
+    list-style: none;
+    margin-top:1rem;
+  
+}
+li{
+    padding:1rem 0rem;
+}
+
+.support{
+    margin-top:3rem;
+}
+
+@media only screen and (min-width:850px){
+    .fake{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+        margin: auto auto;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .fake{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 80%;
+        margin: auto auto;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .fake{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 80%;
+        margin: auto auto;
+    }
+}
