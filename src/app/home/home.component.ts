@@ -8,6 +8,8 @@ import { ThirdPageComponent } from '../third-page/third-page.component';
 import { HostingPlanComponent } from '../hosting-plan/hosting-plan.component';
 import { SecurityComponent } from '../security/security.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ServiceService } from '../services/service.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -26,5 +28,19 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  constructor(private service:ServiceService){}
+  // subscription:Subscription;
+  ngOnInit(): void {
+    this.service.currentScroll.subscribe(
+      scroll=>{
+        if(scroll){
+          document.getElementById('pricing')?.scrollIntoView({behavior:'smooth'})
+          this.service.updateScroll(false)
+        }
+      }
+    )
+  }
+
 
 }

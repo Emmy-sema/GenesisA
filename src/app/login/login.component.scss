@@ -98,12 +98,17 @@ img{
     margin: auto;
 }
 .inputs{
+    text-align: center;
+    .password{
+        margin: auto;
+    }
 }
 input[type=text], input[type=password]{
     width: 320px;
     height: 50px;
     margin-top:1rem;
     border-radius: 7px;
+    
 }
 .password{
     width: 320px;
@@ -111,7 +116,9 @@ input[type=text], input[type=password]{
     color:gray;
 }
 .icons{
+    width: 320px;
     display: flex;
+    margin: auto auto;
     justify-content: space-around;
     align-items: center;
 }
@@ -136,9 +143,10 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top:3rem;
     margin-bottom: 2rem;
     font-size: 14px;
+    width:320px;
+    margin: 2rem auto;
 }
 .right{
     width:100px;
@@ -158,6 +166,54 @@ input[type=password]::placeholder{
     font-size: 35px;
 }
 
+//* second form
+.user{
+    display: block;
+    justify-content: space-around;
+    .name{
+        display: flex;
+        justify-content: space-between;
+        width:320px;
+        input{
+            width: 155px;
+        }
+    }
+}
+
+// flip animation
+.form{
+    margin:5rem auto;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: transparent;
+    width: 340px;
+    height: 300px;
+    perspective: 1000px;
+
+    .inputs, .createAccount {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .inputs{
+        
+    }
+    .createAccount{
+        transform: rotateY(180deg);
+    }
+    
+}
+
+.signIn, .register{
+    padding: .7rem;
+    font-size: 14px;
+    transition: ease-in-out .6s;
+}
 
 @media only screen and (min-width:1000px){
     .contain{

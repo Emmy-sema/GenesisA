@@ -2,7 +2,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
-<div class="contain">
+<div class="animate">
+    <div class="contain">
     <nav>
         <div class="tabs">
             <div  routerLink="" class="home">Home</div>
@@ -11,8 +12,8 @@
             <div class="Contact">Contact</div>
         </div>
         <div class="options">
-            <div class="signIn">Sign In</div>
-            <div class="register">Register</div>
+            <div class="signIn" id="signIn"(click)="animation(false)">Sign In</div>
+            <div class="register" id="register" (click)="animation(true)">Register</div>
         </div>
     </nav>
 
@@ -26,17 +27,32 @@
         <div class="image">
             <img src="../../assets/img/login page image.png" alt="">
         </div>
-        <div class="form">
-            <div class="inputs">
-                 <input type="text" placeholder="Enter Email">
-                <div class="password">
-                    <input type="password" placeholder="..........">
-                    <small>Recover password ?</small>
+        <div class="user" id="user">
+            <div class="form" id="form">
+                <div class="inputs">
+                     <input type="text" placeholder="Enter Email">
+                    <div class="password">
+                        <input type="password" placeholder="..........">
+                        <small>Recover password ?</small>
+                    </div>
+                    <button>SignIn</button>
                 </div>
+                <div class="createAccount">
+                    <div>
+                        <div class="name">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="johndoe@example.com">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="...........">
+                        </div>
+                        <Button>Create Account</Button>
+                    </div>
+                </div>   
             </div>
-           
-            
-            <button>SignIn</button>
             <div class="line">
                 <div class="left"></div>
                 <div class="text">Or continue with</div>
@@ -49,4 +65,6 @@
             </div>
         </div>
     </div>
+</div>
+
 </div>
