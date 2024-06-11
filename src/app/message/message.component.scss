@@ -1,0 +1,96 @@
+// succer and error message
+
+@media only screen and (min-width:340px){
+    .containerr{
+        position: relative;
+       width: fit-content;
+       margin: 5rem auto;
+       
+    //    width: fit-content;
+       width:400px;
+       height: 500px;
+       .bottom,.right,.left,.top{
+        width:50px;
+        background-color: green;
+        transition: ease-in-out 3s;
+       }
+       .bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       }
+       .right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(-90deg);
+        transform-origin:100% 100%;
+
+       }
+       .left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg);
+        transform-origin:0% 0%;
+        width: 100px;
+
+       }
+
+    }
+    .success,.fail{
+        background-color: white;
+        color:black;
+        height: fit-content;
+        width:400px;
+        line-height: 1.8;
+        padding:2rem;
+        border:2px solid black;
+        .email{
+            color: green;
+        }
+
+        .toploader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: red;
+            width:250px;
+            align-content: center;
+
+            
+        }
+        button{
+            margin-top:3rem;
+            border-radius: 8px;
+            width:150px;
+            height: 45px;
+            background-color: #4461F2;
+            border:transparent;
+            cursor: pointer;
+            color: white;
+            margin-bottom: 1rem;
+        }
+    }
+    .fail{
+    }
+}
+
+
+// spinning animation
+
+.loader {
+    border: 8px solid lightgray; /* Light grey */
+    border-top: 8px solid #4461F2; /* Blue */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 2s linear infinite;
+    margin-top:25px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

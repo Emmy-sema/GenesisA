@@ -4,7 +4,7 @@
         <mat-icon>shopping_basket</mat-icon>
         <div class="pin">
             <div>Pin:</div>
-            <div class="id" id="id">7123443</div>
+            <div class="id" id="id">{{data.pin+10000}}</div>
         </div>
     </div>
 </div>
@@ -12,7 +12,7 @@
 <div class="navBar">
     <div class="user">
         <mat-icon>person_outline</mat-icon>
-        <div id="user">Emmy</div>
+        <div id="user">{{data.lastName}}</div>
     </div>
     <div class="contain">
         <div class="home" routerLink="dashboard"> <mat-icon>home</mat-icon> <div>Dashboard</div></div>

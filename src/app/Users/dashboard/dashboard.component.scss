@@ -12,7 +12,7 @@ $third : yellow ;
     border-radius: 5px;
     .contain{
         .dashboard{
-            padding:2rem;
+            padding:1rem;
             .title{
                 font-size: 18px;
                 // text-align: left;
@@ -41,7 +41,7 @@ $third : yellow ;
                     justify-content: space-around;
                     align-items: center;
                     padding:5px;
-
+                    cursor: pointer;
                 }
             }
             

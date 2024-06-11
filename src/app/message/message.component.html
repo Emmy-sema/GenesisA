@@ -1,0 +1,37 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="containerr">
+    <!-- <div class="top" id="top"></div>
+    <div class="bottom" id="bottom"></div>
+    <div class="left" id="left"></div>
+    <div class="right" id="right"></div> -->
+        <h4 style="color:green">{{message}}</h4>
+        <h4 style="color:red">{{error}}</h4>
+
+    <div class="success"  [style.display]="error !== ''?'none':'block'" >
+        <div >
+            <h1>Success</h1>
+        </div>
+        
+        <div>Thank you for creating an account with Genesis!</div>
+
+        <div>We’ve sent a confirmation email to <div class="email">{{email}}</div>. Please check your inbox and click the confirmation link to complete your registration</div>
+
+        <div>If you don’t see the email, please check your spam or junk folder.</div>
+        <div>If you still don't see the email Make sure the email you provided is currect.</div>
+
+        <div class="toploader"> 
+            <button (click)='submit()'>Resend Email</button>
+            <div *ngIf="loader" class="loader"></div>
+        </div>
+        <div>Thank you,</div>
+        <div>Genesis Support Team</div>
+    </div>
+    <div [style.display]="error !== ''?'block':'none'" class="fail">
+        <div >
+            <h1>Error!</h1>
+        </div>
+        <div>We’re sorry, but we encountered an error while processing your Sign up for {{email}}. Please try again later.
+            If the problem persists, please contact our support team for assistance.</div>
+    </div>
+</div>

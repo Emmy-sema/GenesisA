@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs'
+import { BehaviorSubject, Subject } from 'rxjs'
 @Injectable({
   providedIn: 'root'
 })
@@ -19,4 +19,13 @@ export class ServiceService {
   updateFlip(value:Boolean){
     this.flip.next(value)
   }
+
+  private message = new BehaviorSubject<String>('');
+  currentMessage = this.message.asObservable();
+
+  updateMessage(value:String){
+    this.message.next(value);
+  } 
+
+
 }

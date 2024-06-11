@@ -7,7 +7,10 @@
         <div class="green"></div>
         <div class="red"></div>
         <div class="yellow"></div>
+        <h4 style="color:white">{{data.firstName}}, {{data.lastName}}</h4>
+
         <div class="dashboard">
+
             <!-- <div class="alert">
                 You don't have an account dude
             </div> -->
@@ -18,15 +21,15 @@
                 <div class="contacts">
                     <div class="email">
                         <div class="emailText">Email:</div>
-                        <div class="text">alohsemagmail.com</div> 
+                        <div class="text">{{data.email}}</div> 
                     </div>
                     <div class="phone">
                         <div class="phoneText">Phone:</div>
-                        <div class="number">240-579-9614</div> 
+                        <div class="number">{{data.number}}</div> 
                     </div>
                     <h1 class="title">Shortcut</h1>
                     <div class="Shortcut">
-                        <div class="logout">
+                        <div class="logout" (click)="log_out()">
                             <div class="LogText">
                                 Log Out
                             </div>
